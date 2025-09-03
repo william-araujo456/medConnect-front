@@ -1,0 +1,16 @@
+<h1>{{ title }}</h1>
+
+<b>Nome:</b> {{ pessoa.nome }} <br>
+<b>Idade:</b> {{ pessoa.idade }} <br>
+<b>Profissão:</b> {{ pessoa.profissao }} <br>
+
+<br>
+<b>Hobbies</b><br>
+<ul>
+  @for (hobby of listHobbies; track hobby) {
+    <li>{{ hobby }}</li>
+  }
+</ul>
+<button (click)="deleteHobbies()">Deletar hobbie</button>
+
+<button (click)="changeName()">Alterar nome</button>
