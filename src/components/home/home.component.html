@@ -1,5 +1,15 @@
 <h1>{{ title }}</h1>
 
+<h1>Formulario</h1>
+<input type="text" [(ngModel)]="pessoa.name" placeholder="Digite seu nome">
+<input type="number" [(ngModel)]="pessoa.age" placeholder="Digite sua idade">
+<input type="text" [(ngModel)]="pessoa.occupation" placeholder="Digite sua profissão">
+
+<br><br>
+<img
+  src="{{pessoa.photo}}"
+  alt="Imagem Exemplo" width="100" height="100"><br>
+
 <b>Nome:</b> {{ pessoa.nome }} <br>
 <b>Idade:</b> {{ pessoa.idade }} <br>
 <b>Profissão:</b> {{ pessoa.profissao }} <br>
@@ -14,3 +24,4 @@
 <button (click)="deleteHobbies()">Deletar hobbie</button>
 
 <button (click)="changeName()">Alterar nome</button>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROubQ3njNDT9VqzYzylUlNzciU1LhASy3dWw&s" alt="Imagem Exemplo">
