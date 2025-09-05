@@ -9,6 +9,9 @@ $theme: mat.define-theme((
   )
 ));
 
+@include mat.core();
+@include mat.color-variants-backwards-compatibility($theme);
+
 body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
   margin: 0;
@@ -37,10 +40,6 @@ table {
 }
 
 .menu-btn:not(:disabled) {
-  color: #1e1f22 !important;
-}
-
-.menu-btn-active:not(:disabled) {
   background-color: #1e1f22 !important;
   color: #3d7a90 !important;
 }
@@ -49,6 +48,3 @@ table {
   background-color: #3d7a90 !important;
   color: #1e1f22 !important;
 }
-
-@include mat.core()
-@include mat.color-variants-backwards-compatibility($theme);

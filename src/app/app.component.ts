@@ -1,8 +1,13 @@
 import {Component} from '@angular/core';
 import {Router, RouterOutlet} from '@angular/router';
-import {HomeComponent} from '../components/home/home.component';
 import {MatButton} from '@angular/material/button';
 import {NgClass} from '@angular/common';
+
+interface Menu {
+  title: string;
+  route: string;
+  isCurrent?: boolean;
+}
 
 @Component({
   selector: 'app-root',
